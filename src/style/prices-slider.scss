@@ -1,0 +1,77 @@
+
+.prices-slider {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 16px;
+    background-color: $mainbodyfonser13;
+
+    @media (min-width: 768px){
+        display: none;
+    }
+    .prices-slider__container {
+        background: $mainbodyfonser13;
+        position: relative;
+        padding-bottom: 32px;
+        padding-right: 32px;
+        overflow: hidden;
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: $pagination-bullet;
+            ;
+        }
+        .prices-slider__wrapper {
+            padding: 16px;
+            padding-bottom: 0px;
+            box-sizing: border-box !important;
+            
+            .prices-slider__card {
+                width: auto;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 16px 16px;
+                min-width: 260px;
+                max-width: 260px;  
+                border: 1px solid $linelightgrey;
+                background-color: $white;
+                border-radius: 7px;
+                min-height: 200px;
+                max-height: 200px;
+
+                .prices-slider__card-text {
+                    font-family: ttlakes;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .prices-slider__card-text--grey {
+                        color: $greyfocus;
+                    }
+                }
+                
+                .prices-slider__element {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    .prices-slider__link {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        .prices-slider__arrow {
+                            width: 119px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

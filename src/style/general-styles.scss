@@ -1,0 +1,17 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $mainbodyfonser13;
+    
+    .container {
+        display: block;
+
+        @media (min-width: 1120px) {
+                display: grid;
+                grid-template-columns: 320px 1fr;
+        }
+    }
+}

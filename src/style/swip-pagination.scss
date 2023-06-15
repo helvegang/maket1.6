@@ -1,0 +1,7 @@
+.swiper-pagination {
+    position: absolute;
+
+   @media (min-width: 768px) {
+        display: none;
+    }
+}

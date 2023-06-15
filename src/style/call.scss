@@ -1,0 +1,148 @@
+.call {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 1fr 320px;
+    z-index: 101;
+    
+    @media (min-width: 1120px) {
+        grid-template-columns: 1fr 440px;
+    }
+
+    .call__background {
+        opacity: 0.5;
+        background-color: $white;
+    }
+
+
+
+    .call__wrapper {
+        background-color: $white;
+        max-width: 320px;
+        box-shadow: 0 0 20px $lightgrey;
+        
+        @media (min-width: 440px) {
+                max-width: 440px;
+        }
+        .call__title {
+            display: flex;
+            align-items: center;
+            
+            @media (min-width: 1120px) {
+                margin-top: 32px;
+            }
+
+            .call__title-text {
+                font-size: 24px;
+                font-family: 'ttlakesbold';
+                line-height: 32px;  
+                padding: 0px;
+            }
+            .call__highlight {
+                margin-right: 12px;
+                @media (min-width: 440px) {
+                    margin-right: 30px;
+                    }    
+                }    
+            }
+        .call__close {
+            margin: 0px;
+            padding: 0px;
+
+            @media (min-width: 1120px) {
+                position: absolute;
+                right: 472px;
+                top: 32px;
+                margin: 0px;
+                padding: 0px;
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
+            opacity: 0.3;
+            }
+
+            .call__close-image {
+                margin: 24px 16px;
+                @media (min-width: 1120px) {
+                        margin: 0px;
+                    }    
+            }
+        }
+        .call__input-wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            padding: 20px 16px 16px;
+    
+            @media (min-width: 440px) {
+                padding: 24px 32px 24px;
+            }  
+            .call__notification {
+                font-family: ttlakes;
+                font-size: 14px;
+                line-height: 16px;
+                color: $greyfocus;
+                margin: 0px;
+                padding: 2px 1px;
+
+                .call__text-link {
+                    text-decoration: none;
+                    color: $pinkhover;
+                }
+            } 
+            .call__button {
+                border: 0px;
+                background-color: $white;
+                padding: 0px;
+                width: 136px;
+                height: 32px;
+                align-self: flex-end;
+                margin-top: 3px;
+                
+                @media (min-width: 440px) {
+                    margin-top: 7px;
+                }  
+            
+                &:hover {
+                    opacity: 0.3;
+                }
+                .call__send {
+                    width: 136px;
+                    height: 32px;
+                }
+                
+
+            }
+        }
+    }
+}
+.call-open {
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

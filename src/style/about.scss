@@ -1,0 +1,87 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+                }
+
+    @media (min-width: 1120px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+                }
+                
+    .about__article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        @media (min-width: 768px) {
+            .about__article {
+                width: 41%;
+                padding-left: 24px;
+                padding-right: 48px;
+            }
+        }
+        @media (min-width: 1120px) {
+            .about__article {
+                padding-left: 32px;
+                padding-right: 36px;
+                width: 44%;
+            }
+        }
+        .about__text {
+            white-space: pre-wrap;
+            margin: 0px;
+            font-size: 14px;
+            font-family: ttlakes;
+        }
+        .about__text--invisible {
+            max-height: 80px;
+            overflow: hidden;
+        }
+        .about__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                opacity: 0.3;
+            }
+
+            .about__more {
+                display: flex;
+                font-size: 16px;
+                font-family: 'ttlakes';
+                font-weight: 600;
+                background-color: $mainbodyfonser13;
+                border: 0px;
+                padding: 0px;
+                line-height: 24px;
+            }
+
+            .about__arrow {
+                margin-right: 16px;
+            }
+
+        }
+    }
+    .about__photo {
+        width: 100%;
+        margin-bottom: 16px;
+        
+        @media (min-width: 768px) {
+            width: 47%;
+            margin-right: 25px;
+        } 
+        @media (min-width: 1120px) {
+            width: 47%;
+            margin-right: 29px;
+        }
+    } 
+
+}

@@ -1,0 +1,23 @@
+.button {
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border: 0px;
+}
+.button--hidden {
+    display: none;
+    
+    @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+.button__img {
+    width: 40px;
+    height: 40px;
+    
+    &:hover {
+        opacity: 0.3;
+    }
+}

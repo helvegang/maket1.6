@@ -1,0 +1,124 @@
+.brands {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 16x;
+    background-color: $mainbodyfonser13;
+    .brands__container {
+        background: $mainbodyfonser13;
+        position: relative;
+        padding-bottom: 32px;
+        padding-right: 32px;
+        overflow: hidden;
+        @media (min-width: 768px) {
+                position: static;
+                padding-bottom: 0px;
+            }
+        }
+    .brands__container--invisible {
+        @media (min-width: 768px) { 
+               max-height: 200px;
+               overflow: hidden;
+           }
+     
+        @media (min-width: 1120px) {
+            max-height: 200px;
+            overflow: hidden;
+        } 
+    }
+    .brands__wrapper {
+        padding: 16px;
+        padding-bottom: 0px;
+        box-sizing: border-box !important;
+        
+        @media (min-width: 768px) { 
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 24px; 
+            padding: 24px 24px; 
+            padding-bottom: 16px;
+        }
+        @media (min-width: 1120px) {
+            gap: 16px 32px;
+            padding: 24px 32px; 
+            padding-bottom: 16px;
+        }
+        .brands__slide {
+            width: auto;
+        
+            .brands__link {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 13px 14px;
+                width: 240px; 
+                border: 1px solid $linelightgrey;
+                background-color: $white;
+                border-radius: 7px;
+                height: 72px;
+                
+                @media (min-width: 768px) and (max-width: 1119px) {
+                    width: 224px;
+                }
+
+                &:hover {
+                    @media (min-width: 768px) {
+                    transform: scale(1.2);
+                }
+                }
+                .brands__logo {
+                    margin-right: auto;
+                }
+                .brands__arrow {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .brands__link-apple {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+            .brands__link--hp {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+        }
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background-color: $pagination-bullet;
+            ;
+        }
+    }
+    .brands__more {
+        display: none;
+        margin-top: 8px;
+        background-color: $mainbodyfonser13;
+        
+        @media (min-width: 768px) { 
+            display: block;
+            padding-left: 32px;
+        }
+        
+        @media (min-width: 1120px) {
+            padding-left: 39px;
+        }
+        .brands__more-arrows {
+            padding: 0px;
+        }
+        .brands__more-button {
+            font-family: 'ttlakes';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            background-color: $mainbodyfonser13;
+            border: 0px;
+            padding: 0px;
+            margin-left: 16px;
+           
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+    }
+}

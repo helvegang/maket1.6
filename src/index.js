@@ -1,0 +1,10 @@
+import "@babel/polyfill";
+import './index.html';
+import './index.scss';
+import './call.js';
+import './feedback.js';
+import './menu.js';
+import './more.js';
+import './script.js';
+import './script2';
+import './script3';

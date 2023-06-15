@@ -1,0 +1,202 @@
+.popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    grid-template-columns: 320px 1fr;
+    padding: 0px;
+    margin: 0px;
+    z-index: 99;
+    @media (min-width: 1120px) {
+        display: block;
+        position: static;
+    }
+    .popup__background {
+        opacity: 0.5;
+        background-color: $white;
+        @media (min-width: 1120px) {
+            display: none;
+        }
+    }
+    .popup__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width:320px;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: $white;
+        box-shadow: 0 0 60px $grey;
+        
+        @media (min-width: 1120px) {
+            box-shadow: none;
+        }
+
+        .popup_header {
+            display: flex;
+            background-color: $white;
+            align-items: center;
+            margin: 0px;
+            padding: 0px 16px;
+            margin-bottom: 29px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+ 
+            @media (min-width: 768px) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .popup__button:first-child {
+                margin-right: 16px;
+            }
+            .popup__button--hidden {
+                @media (min-width: 1120px) {
+                    display: none;
+                }
+            }
+            .popup__logo-link {
+                height: 51px;
+                width: 97px;
+                margin-right: auto;
+            }
+        }
+        .popup__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 0px;
+            padding-right: 16px; 
+            padding-bottom: 16px;  
+
+            .popup__link { 
+                color:#1B1C21;
+                background-color: $white;
+                border: 0px;
+                font-family: 'ttlakes';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                white-space: nowrap;
+                padding: 4px 0px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            
+                &:hover {
+                    color: $pinkhover;
+                }
+
+                &:focus {
+                    color: $greyfocus;
+                    transition-duration: 1s;
+                    transition-timing-function: linear;
+                }
+
+                &::before {
+                    content: "";
+                    border-radius: 0 4px 4px 0;
+                    background-color: $highbluemarine;
+                    background-size: 4px 28px;
+                    width: 4px;
+                    height: 28px;
+                    opacity: 0;
+                }
+
+                &:focus::before {
+                    opacity: 1;
+                }
+            
+                &:hover::before {
+                    opacity: 1;
+                    background-color: $lightgrey;
+                }
+            
+            
+            }
+        }
+        .popup__footer {
+            display: flex;
+            flex-direction: column;
+            padding: 0 24px 32px 24px;
+
+            .popup__buttons {
+                padding-bottom: 16px;
+
+                .popup__bottom-button {
+                    margin-right: 16px;
+                }
+            }
+            .popup__contacts {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .popup__mail {
+                    background-color: $white;
+                    border: 0px;
+                    font-family: "ttlakes";
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                    text-decoration: none;
+                    color: $black;
+
+                    &:hover {
+                        color: $pinkhover;
+                    }
+                }
+                .popup__tel {
+                    background-color: $white;
+                    border: 0px;
+                    font-family: "ttlakesbold";
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 40px;
+                    text-decoration: none;
+                    color: $black;
+
+                    &:hover {
+                        color: $pinkhover;
+                    }
+                }
+            }
+
+            .popup__languages {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .popup__language-item {
+                    background-color: $white;
+                    border: 0px;
+                    font-family: "ttlakes";
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    padding: 0px;
+                    margin-right: 7px;
+
+                    &:hover {
+                        color: $pinkhover;
+                    }
+
+                    &:focus {
+                        color: $greyfocus;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popup-open {
+    display: grid;
+}
+
+
+
